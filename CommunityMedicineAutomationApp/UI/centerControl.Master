@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="centerControl.master.cs" Inherits="CommunityMedicineAutomationApp.UI.centerControl" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="../Styles/reset.css" rel="stylesheet" />
+    <link href="../Styles/style.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+  
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+  
+  
+            
+             <div class="wrapper">
+        
+                  <header>
+            <h1>Community Medicine Automation</h1>
+        </header>
+
+         <nav id="primary_nav_wrap">
+                <ul>
+                     <li><a href="HomeUI.aspx">Home</a></li>
+                     <li><a href="#">Tasks</a> 
+                     <ul>
+                     <li><a href="DiseaseEntryUI.aspx">Disease Entry</a></li>
+                     <li><a href="MedicineEntryUI.aspx">Medicine Entry</a></li>
+                     <li><a href="CenterCreateUI.aspx"> Create Center</a></li>
+                     <li><a href="CenterInfoUI.aspx">Center Info</a></li>
+                     </ul>
+                    </li>
+                    <li> <a href="DiseaseWiseReportUI.aspx">Disease-Wise-Report</a></li>
+                    <li><a href="DiseaseDemographicReportUI.aspx">Disease Demographic Report</a></li>
+                    <li><a href="CenterLoginUI.aspx">Center Login</a></li>
+                    <li> <a href="AboutusUI.aspx">About Us</a></li>
+                     </ul>
+            </nav>
+        
+        
+        <div class="container">
+            
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+             </div>
+    </div>
+    </form>
+</body>
+</html>

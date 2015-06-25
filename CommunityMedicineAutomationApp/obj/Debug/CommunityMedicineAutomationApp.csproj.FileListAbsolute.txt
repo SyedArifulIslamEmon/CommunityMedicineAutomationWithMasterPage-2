@@ -1,0 +1,11 @@
+H:\Workspace\Visual Studio 2013\Projects\CommunityMedicineAutomationApp\CommunityMedicineAutomationApp\bin\CommunityMedicineAutomationApp.dll.config
+H:\Workspace\Visual Studio 2013\Projects\CommunityMedicineAutomationApp\CommunityMedicineAutomationApp\bin\CommunityMedicineAutomationApp.dll
+H:\Workspace\Visual Studio 2013\Projects\CommunityMedicineAutomationApp\CommunityMedicineAutomationApp\bin\CommunityMedicineAutomationApp.pdb
+H:\Workspace\Visual Studio 2013\Projects\CommunityMedicineAutomationApp\CommunityMedicineAutomationApp\bin\EntityFramework.dll
+H:\Workspace\Visual Studio 2013\Projects\CommunityMedicineAutomationApp\CommunityMedicineAutomationApp\bin\EntityFramework.SqlServer.dll
+H:\Workspace\Visual Studio 2013\Projects\CommunityMedicineAutomationApp\CommunityMedicineAutomationApp\bin\itextsharp.dll
+H:\Workspace\Visual Studio 2013\Projects\CommunityMedicineAutomationApp\CommunityMedicineAutomationApp\bin\EntityFramework.xml
+H:\Workspace\Visual Studio 2013\Projects\CommunityMedicineAutomationApp\CommunityMedicineAutomationApp\bin\EntityFramework.SqlServer.xml
+H:\Workspace\Visual Studio 2013\Projects\CommunityMedicineAutomationApp\CommunityMedicineAutomationApp\obj\Debug\CommunityMedicineAutomationApp.dll
+H:\Workspace\Visual Studio 2013\Projects\CommunityMedicineAutomationApp\CommunityMedicineAutomationApp\obj\Debug\CommunityMedicineAutomationApp.pdb
+H:\Workspace\Visual Studio 2013\Projects\CommunityMedicineAutomationApp\CommunityMedicineAutomationApp\obj\Debug\CommunityMedicineAutomationApp.csprojResolveAssemblyReference.cache
