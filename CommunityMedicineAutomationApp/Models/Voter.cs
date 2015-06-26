@@ -14,7 +14,7 @@ namespace CommunityMedicineAutomationApp.Models
 
         public string  Address { get; set; }
 
-        public string  DateofBirth { get; set; }
+        public DateTime  DateofBirth { get; set; }
 
 
     }

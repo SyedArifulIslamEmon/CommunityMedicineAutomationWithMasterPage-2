@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link href="../Styles/reset.css" rel="stylesheet" />
-    <link href="../Styles/style.css" rel="stylesheet" />
+    <link href="../Styles/centralstyle.css" rel="stylesheet" />
+  
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>

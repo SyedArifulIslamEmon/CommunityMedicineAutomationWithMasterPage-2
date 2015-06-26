@@ -32,32 +32,7 @@ namespace CommunityMedicineAutomationApp.UI
             }
         }
 
-        protected void savecenterEntryButton_OnClick(object sender, EventArgs e)
-        {
-            center.Name = nameTextBox.Text;
-
-            center.DistrictId = int.Parse(districtDropDownList.SelectedValue.ToString());
-
-            center.ThanaId = int.Parse(thanaDropDownList.SelectedValue.ToString());
-
-            string districtname = districtDropDownList.SelectedItem.Text;
-            string thananame = thanaDropDownList.SelectedItem.Text;
-
-            center.Code = GetCode(districtname, thananame);
-
-            center.Password = GetPassword();
-
-            string message = centerManager.Insert(center);
-
-            label6.Text = message;
-
-
-
-
-            Response.Redirect("ShowcenterInfoUI.aspx?districtName=" + districtname + "&thanaName=" + thananame + "&centerName=" + center.Name + "&centerCode=" + center.Code + "&centerPassword=" + center.Password);
-
-
-        }
+     
 
         protected void districtDropDownList_OnSelectedIndexChanged(object sender, EventArgs e)
         {
@@ -106,9 +81,40 @@ namespace CommunityMedicineAutomationApp.UI
             return password;
         }
 
+
+       
+
         protected void savecentralControlEntryButton_OnClick(object sender, EventArgs e)
         {
+            string key="i am Ram";
 
+            byte[] hashKey = centerManager.GetHashKey(key);
+
+            center.Name = nameTextBox.Text;
+
+            center.DistrictId = int.Parse(districtDropDownList.SelectedValue.ToString());
+
+            center.ThanaId = int.Parse(thanaDropDownList.SelectedValue.ToString());
+
+            string districtname = districtDropDownList.SelectedItem.Text;
+            string thananame = thanaDropDownList.SelectedItem.Text;
+
+            center.Code = GetCode(districtname, thananame);
+
+            string password = GetPassword();
+
+            center.Password = centerManager.Encrypt(hashKey,password);
+
+
+
+            string message = centerManager.Insert(center);
+
+            label6.Text = message;
+
+
+            string decryptedpassword = centerManager.Decrypt(hashKey, center.Password);
+
+            Response.Redirect("ShowcenterInfoUI.aspx?districtName=" + districtname + "&thanaName=" + thananame + "&centerName=" + center.Name + "&centerCode=" + center.Code + "&centerPassword=" + decryptedpassword);
         }
 
     }

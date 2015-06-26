@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Web;
 using System.Web.Configuration;
+using CommunityMedicineAutomationApp.Models;
 using CommunityMedicineAutomationWebApp.Models;
 
 namespace CommunityMedicineAutomationWebApp.DAL
@@ -289,6 +286,71 @@ namespace CommunityMedicineAutomationWebApp.DAL
             return namexists;
             
         }
+
+
+        public List<Dose> GetDoses()
+        {
+            List<Dose> doseList = new List<Dose>();
+
+
+            SqlConnection connection = new SqlConnection(connectionstring);
+
+            string query = "SELECT * FROM Table_Dose";
+
+            SqlCommand command = new SqlCommand(query, connection);
+
+            connection.Open();
+
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                Dose dose=new Dose();
+                dose.Id = int.Parse(reader["dose_Id"].ToString());
+                dose.Name = reader["dose_Name"].ToString();
+
+               doseList.Add(dose);
+
+            }
+            reader.Close();
+            connection.Close();
+
+            return doseList;
+
+        }
+
+
+        public List<Doctor> GetDoctorsList(int id)
+        {
+
+         List<Doctor> doctors=new List<Doctor>();
+
+
+            SqlConnection connection = new SqlConnection(connectionstring);
+
+            string query = "SELECT * FROM Table_Doctor WHERE doctor_CenterId='"+id+"' ";
+
+            SqlCommand command = new SqlCommand(query, connection);
+
+            connection.Open();
+
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+               Doctor doctor=new Doctor();
+                doctor.Id = int.Parse(reader["doctor_Id"].ToString());
+                doctor.Name = reader["doctor_Name"].ToString();
+
+                doctors.Add(doctor);
+
+            }
+            reader.Close();
+            connection.Close();
+
+            return doctors;
+
+        } 
 
     }
 }

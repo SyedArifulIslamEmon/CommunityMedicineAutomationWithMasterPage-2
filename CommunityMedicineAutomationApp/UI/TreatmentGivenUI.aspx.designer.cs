@@ -130,6 +130,15 @@ namespace CommunityMedicineAutomationApp.UI {
         protected global::System.Web.UI.WebControls.Label label6;
         
         /// <summary>
+        /// showAllHistoryButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button showAllHistoryButton;
+        
+        /// <summary>
         /// observationTextBox control.
         /// </summary>
         /// <remarks>
@@ -139,13 +148,13 @@ namespace CommunityMedicineAutomationApp.UI {
         protected global::System.Web.UI.WebControls.TextBox observationTextBox;
         
         /// <summary>
-        /// calendar1 control.
+        /// dateTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar calendar1;
+        protected global::System.Web.UI.WebControls.TextBox dateTextBox;
         
         /// <summary>
         /// doctornameDropDownList control.

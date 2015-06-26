@@ -40,22 +40,22 @@ namespace CommunityMedicineAutomationApp.UI {
         protected global::System.Web.UI.WebControls.Button showDiseaseReportButton;
         
         /// <summary>
-        /// calender2 control.
+        /// datebetweenTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar calender2;
+        protected global::System.Web.UI.WebControls.TextBox datebetweenTextBox;
         
         /// <summary>
-        /// Calendar3 control.
+        /// lastTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar3;
+        protected global::System.Web.UI.WebControls.TextBox lastTextBox;
         
         /// <summary>
         /// diseaseWiseReport control.

@@ -18,15 +18,19 @@ namespace CommunityMedicineAutomationApp.UI
 
         protected void logincenterButon_OnClick(object sender, EventArgs e)
         {
+            string key = "i am Ram";
+
+            byte[] hashkey = centerManager.GetHashKey(key);
+
              string code = codeTextBox.Text;
              string password = passwordTextBox.Text;
              Session["centerCode"] = codeTextBox.Text;
 
-           
+            string encryptedpassword = centerManager.Encrypt(hashkey,password);
 
-            bool login = centerManager.LoginMessage(code,password);
+            bool login = centerManager.LoginMessage(code,encryptedpassword);
 
-            if (login == true)
+            if (login)
             {
                 label3.Text = "Login Successful";
 
