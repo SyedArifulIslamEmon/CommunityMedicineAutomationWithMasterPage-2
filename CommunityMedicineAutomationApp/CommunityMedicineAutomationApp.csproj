@@ -460,6 +460,7 @@
     <Compile Include="Models\Medicine.cs" />
     <Compile Include="Models\MedicineQuantity.cs" />
     <Compile Include="Models\Thana.cs" />
+    <Compile Include="Models\Voter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\AboutusUI.aspx.cs">
       <DependentUpon>AboutusUI.aspx</DependentUpon>
