@@ -13,5 +13,10 @@ namespace CommunityMedicineAutomationApp.UI
         {
 
         }
+
+        protected void showDemographicReportButton_OnClick(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
